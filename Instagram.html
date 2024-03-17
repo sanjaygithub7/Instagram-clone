@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta UI</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <!--header-->
+    <div class="sticky top-0 border-b shadow-sm bg-white z-30">
+        <div class="flex justify-between h-24 items-center mx-4 xl:max-w-6xl xl:mx-auto">
+            <!--left-->
+            <div class="w-10 lg:hidden cursor-pointer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png" alt="insta-logo">
+            </div>
+            <div class="w-24 hidden lg:inline cursor-pointer">
+                <img src="http://www.jennexplores.com/wp-content/uploads/2015/09/Instagram_logo_black.png" alt="instagram">
+            </div>
+               <!--middle-->
+            <div class="relative mt-1">
+                <div class="absolute  left-3 top-2.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-5 text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                </div>
+                <input class="pl-10 rounded-md focus:ring-black focus:border-black bg-gray-50 border border-gray text-black" type="text" placeholder="Search">
+
+            </div>
+            <!--right-->
+            <div class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 hidden lg:inline cursor-pointer transition-transform hover:scale-125">
+                    <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clip-rule="evenodd" />
+                  </svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer transition-transform hover:scale-125">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <img class="h-10 w-10 rounded-full bg-gray-200 cursor-pointer" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/57.png" alt="profile">
+            </div>
+        </div>
+    </div>
+    <!--feed-->
+    <main class="grid grid-cols-1 md:grid-cols-3 md:m-2">
+        <section class="md:col-span-2">
+            <!-- left -->
+            <!-- stories -->
+            <div class="flex space-x-2 p-6 border overflow-x-scroll scrollbar-none rounded-small my-8" >
+                <div class="cursor-pointer relative">
+                    <img class="h-14 w-14 rounded-full bg-gray-300 p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://sportbetpro.net/wp-content/uploads/2022/03/MS-Dhoni.webp" alt="profile1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-6 absolute top-4 right-3.5 text-white  transition-transform group-hover:scale-110">
+                        <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                      </svg>
+                      
+                    <p class="text-xs w-14 truncate text-center">Mahendra Singh</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=1" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Susan L. Martinez</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full  p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=2" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Kane Adams</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=3" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">David C williams</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=4" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Peter Martin</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=5" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Steffina paul</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=6" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Chris Henry</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=7" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Andrew Christian</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=8" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Paul Adam</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=9" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Mary smith</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=10" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Ben Tennyson</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=11" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Jake Swinn</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=12" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Kevin levin</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=13" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Sam anderson</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=14" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Aiden Markram</p>
+                </div>
+                <div class=" cursor-pointer">
+                    <img class="h-14 w-14 rounded-full p-1 border-2 border-red-500 transition-transform hover:scale-110" src="https://i.pravatar.cc/150?img=15" alt="profile1">
+                    <p class="text-xs w-14 truncate text-center">Joseph Dwayne</p>
+                </div>
+                   
+                </div>
+
+            </div>
+            <!-- post -->
+            <div class="border my-7 rounded-md">
+                <!--post header-->
+                <div class="flex items-center justify-between p-5 ">
+                    <div class="flex items-center">
+                        <img class="h-14 w-14 rounded-full border-2 p-1" src="https://sportbetpro.net/wp-content/uploads/2022/03/MS-Dhoni.webp" alt="">
+                    <p class="font-bold flex-1 ml-2">mahendrasinghdhoni</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-blue-500">
+                        <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
+                    </svg>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <!-- post image -->
+                <img class="w-full object-cover" src="https://pbs.twimg.com/media/GBugokmWsAAo80G.jpg" alt="">
+                <!-- post buttons -->
+                <div class="my-3 ml-3 flex justify-between">
+                    <div class="flex space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 transition-transform hover:scale-125 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 transition-transform hover:scale-125 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 transition-transform hover:scale-125 cursor-pointer -rotate-45">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                          </svg>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 transition-transform hover:scale-125 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                      </svg>
+                </div>
+                <!--post comments -->
+                <!-- captions -->
+                <div class="flex mx-3">
+                    <span class="font-bold">chennaisuperkings</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-blue-500">
+                        <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="mx-2 truncate">Lets go !</p>
+                </div>
+            <!--comments -->
+            <div class="mx-10 my-3 max-h-24 overflow-y-scroll scrollbar-none">
+                <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://i.pinimg.com/1200x/c4/68/b2/c468b2eb02c93c8909064afbec3ab475.jpg" alt="">
+                    <p class="font-bold">jadeja</p>
+                    <p class="flex-1">nice</p>
+                    <p class=""> 2 hours ago</p>
+
+                 </div>
+                 <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://wallpapercave.com/wp/wp7307874.jpg" alt="">
+                    <p class="font-bold">raina</p>
+                    <p class="flex-1">good</p>
+                    <p class=""> 4 hours ago</p>
+
+                 </div>
+                 <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://akm-img-a-in.tosshub.com/sites/visualstory/wp/2023/06/fafduplessiscsk234-scaled.jpg?size=*:900" alt="">
+                    <p class="font-bold">du plesis</p>
+                    <p class="flex-1">All the best</p>
+                    <p class=""> 5 hours ago</p>
+
+                 </div>
+                 <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnscbDWTi9_HV_duVttlxUmTQN51S30x3_fg&s" alt="">
+                    <p class="font-bold">DJ bravo</p>
+                    <p class="flex-1">Fantastic</p>
+                    <p class=""> 8 hours ago</p>
+
+                 </div>
+                 <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://crickettimes.com/wp-content/uploads/2023/05/Ambati-Rayudu-IPL-retirement.jpeg" alt="">
+                    <p class="font-bold">rayudu</p>
+                    <p class="flex-1">very good</p>
+                    <p class=""> 12 hours ago</p>
+
+                 </div>
+                
+            </div>
+                <!-- post input -->
+                <form action="" class="flex mx-3 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                      </svg>
+                      <input  class="border-none flex-1 focus:ring-0 " type="text" placeholder="Enter your comment" >
+                      <button class="text-blue-500 font-bold">Post</button>
+                </form>
+            
+</div>
+                           <!--post2 -->
+            <div class="border my-7 rounded-md">
+                <!--post header-->
+                <div class="flex items-center justify-between p-5 ">
+                    <div class="flex items-center">
+                        <img class="h-14 w-14 rounded-full border-2 p-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvnx2wqzNKqt6o-pGeF0x5s3Lzz-XWQ9PbuaTv-ATj6w&s" alt="">
+                    <p class="font-bold flex-1 ml-2">chennaisuperkings</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-blue-500">
+                        <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
+                    </svg>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <!-- post image -->
+                <img class="w-full object-cover" src="https://ss-i.thgim.com/public/incoming/6hrnzl/article66909874.ece/alternates/FREE_1200/champ.JPG" alt="">
+                <!-- post buttons -->
+                <div class="my-3 ml-3 flex justify-between">
+                    <div class="flex space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="0" stroke="currentColor" class="w-7 h-7 transition-transform hover:scale-125 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 transition-transform hover:scale-125 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 transition-transform hover:scale-125 cursor-pointer -rotate-45">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                          </svg>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 transition-transform hover:scale-125 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                      </svg>
+                </div>
+                <!--post comments -->
+                <!-- captions -->
+                <p class="mx-4 font-bold">2 likes</p>
+                <div class="flex mx-3">
+                    <span class="font-bold">chennaisuperkings</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-blue-500">
+                        <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="mx-2 truncate">Champions of 2023!</p>
+                </div>
+            <!--comments -->
+            <div class="mx-10 my-3 max-h-24 overflow-y-scroll scrollbar-none">
+                <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://i.pinimg.com/1200x/c4/68/b2/c468b2eb02c93c8909064afbec3ab475.jpg" alt="">
+                    <p class="font-bold">jadeja</p>
+                    <p class="flex-1">nice</p>
+                    <p class=""> 2 hours ago</p>
+
+                 </div>
+                 <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://wallpapercave.com/wp/wp7307874.jpg" alt="">
+                    <p class="font-bold">raina</p>
+                    <p class="flex-1">good</p>
+                    <p class=""> 4 hours ago</p>
+
+                 </div>
+                 <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://akm-img-a-in.tosshub.com/sites/visualstory/wp/2023/06/fafduplessiscsk234-scaled.jpg?size=*:900" alt="">
+                    <p class="font-bold">du plesis</p>
+                    <p class="flex-1">All the best</p>
+                    <p class=""> 5 hours ago</p>
+
+                 </div>
+                 <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnscbDWTi9_HV_duVttlxUmTQN51S30x3_fg&s" alt="">
+                    <p class="font-bold">DJ bravo</p>
+                    <p class="flex-1">Fantastic</p>
+                    <p class=""> 8 hours ago</p>
+
+                 </div>
+                 <div class="flex items-center  space-x-2">
+                    <img class="h-7 w-7 rounded-full  border-2 border-blue-400" src="" alt="">
+                    <p class="font-bold">rayudu</p>
+                    <p class="flex-1">very good</p>
+                    <p class=""> 12 hours ago</p>
+
+                 </div>
+                
+            </div>
+                <!-- post input -->
+                <form action="" class="flex mx-3 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                      </svg>
+                      <input  class="border-none flex-1 focus:ring-0 " type="text" placeholder="Enter your comment" >
+                      <button class="text-blue-500 font-bold">Post</button>
+                </form>
+
+
+
+                
+
+            </div>
+
+            
+            
+        </section>
+        <section class="hidden md:inline-grid md:col-span-1">
+            <!-- right -->
+            <div>
+                <div class="fixed w-[380px]">
+                    <!-- mini profile -->
+                    <div class="flex justify-between items-center mt-12 ml-8 space-x-3 ">
+                        <img class="h-16 w-16 rounded-full p-1 border-2 transition-transform hover:scale-110" src="https://sportbetpro.net/wp-content/uploads/2022/03/MS-Dhoni.webp" alt="profile1">
+                        <div class="flex-1">
+                            <p class="font-bold">mahendrasinghdhoni</p><p class="text-sm text-gray-500">Welcome to instagram</p>
+                        </div>
+                        <button class="text-blue-400 font-semibold">Sign out</button>
+                    </div>
+                    <!-- suggestions -->
+                    <div class="flex justify-between mt-5 ml-8">
+                        <p class="text-gray-500 text-sm font-bold">Suggestion for you</p>
+                        <p class="text-gray-800 text-sm font-bold">See all</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center ml-10 mt-5 space-x-3">
+                            <img class="h-10 w-10 rounded-full" src="https://i.pinimg.com/1200x/c4/68/b2/c468b2eb02c93c8909064afbec3ab475.jpg" alt="">
+                            <div class="flex-1">
+                               <p class="font-bold  ">ravindrajadeja</p><p class="text-sm text-gray-500">Teammate</p>
+                            </div>
+                            <button class="text-sm text-blue-400 font-bold">Following</button>
+                        </div>
+                        <div class="flex justify-between items-center ml-10 mt-5 space-x-3">
+                            <img class="h-10 w-10 rounded-full" src="https://wallpapercave.com/wp/wp7307874.jpg" alt="">
+                            <div class="flex-1">
+                               <p class="font-bold  ">sureshraina</p><p class="text-sm text-gray-500">Teammate</p>
+                            </div>
+                            <button class="text-sm text-blue-400 font-bold">Following</button>
+                        </div>
+                        <div class="flex justify-between items-center ml-10 mt-5 space-x-3">
+                            <img class="h-10 w-10 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnscbDWTi9_HV_duVttlxUmTQN51S30x3_fg&s" alt="">
+                            <div class="flex-1">
+                               <p class="font-bold  ">djbravo</p><p class="text-sm text-gray-500">Teammate</p>
+                            </div>
+                            <button class="text-sm text-blue-400 font-bold">Following</button>
+                        </div>
+                       
+                    </div>
+    
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <p></p>
+
+</body>
+</html>
